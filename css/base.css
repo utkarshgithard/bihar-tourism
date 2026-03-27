@@ -1,0 +1,39 @@
+/* Bihar Tourism - Base Styles & Design Tokens */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --primary-saffron: #E97451;
+    --secondary-terracotta: #BC544B;
+    --accent-gold: #D4AF37;
+    --deep-green: #004225;
+    --cream-bg: #FDF5E6;
+    --text-dark: #2C3E50;
+    --text-light: #FDF5E6;
+    --card-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    --transition-smooth: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    
+    /* Fluid Typography */
+    --font-h1: clamp(2.5rem, 8vw, 4.5rem);
+    --font-h2: clamp(2rem, 5vw, 3.5rem);
+    --font-h3: clamp(1.2rem, 3vw, 1.8rem);
+    --section-padding: clamp(3rem, 8vw, 6rem);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--cream-bg);
+    color: var(--text-dark);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+}

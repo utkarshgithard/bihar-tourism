@@ -1,0 +1,27 @@
+/* Bihar Tourism - Responsive Styles */
+
+@media (max-width: 1200px) {
+    .seasons-grid { grid-template-columns: repeat(3, 1fr) !important; }
+}
+
+@media (max-width: 1024px) {
+    section { padding: 4rem 5%; }
+    .destinations-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .seasons-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
+
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hero-content h1 { font-size: 2.8rem; }
+    .seasons-grid { grid-template-columns: 1fr !important; }
+    .cuisine-grid { gap: 1rem; }
+    .food-card { min-width: 85vw; scroll-snap-align: center; }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 { font-size: 2.2rem; }
+    .hero-content p { font-size: 1rem; }
+    .section-title h2 { font-size: 1.8rem; }
+    .season-card { padding: 1.5rem; }
+    .exp-icon { width: 80px; height: 80px; font-size: 2rem; }
+}
